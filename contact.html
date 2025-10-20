@@ -112,89 +112,71 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
+                <!-- Additional Contact Info -->
                 <div class="contact-form-wrapper">
-                    <h2 data-en="Send Us a Message" data-ar="أرسل لنا رسالة">Send Us a Message</h2>
-                    <p class="form-note" data-en="Fill out the form below and we'll get back to you within 24 hours." data-ar="املأ النموذج أدناه وسنعاود الاتصال بك خلال 24 ساعة.">Fill out the form below and we'll get back to you within 24 hours.</p>
-                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                        <!-- Hidden field to send copy to additional email -->
-                        <input type="hidden" name="_cc" value="rami@moonhire.com">
+                    <h2 data-en="How to Reach Us" data-ar="كيفية التواصل معنا">How to Reach Us</h2>
+                    <p data-en="We'd love to hear about your project. Please reach out to us via email or phone, and we'll get back to you as soon as possible." data-ar="يسعدنا سماع المزيد عن مشروعك. يرجى التواصل معنا عبر البريد الإلكتروني أو الهاتف، وسنرد عليك في أقرب وقت ممكن.">
+                        We'd love to hear about your project. Please reach out to us via email or phone, and we'll get back to you as soon as possible.
+                    </p>
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label data-en="Full Name" data-ar="الاسم الكامل">Full Name</label>
-                                <input type="text" name="name" required data-placeholder-en="Your name" data-placeholder-ar="اسمك" placeholder="Your name">
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
                             </div>
-                            <div class="form-group">
-                                <label data-en="Email" data-ar="البريد الإلكتروني">Email</label>
-                                <input type="email" name="email" required data-placeholder-en="your@email.com" data-placeholder-ar="بريدك@الإلكتروني.com" placeholder="your@email.com">
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label data-en="Phone" data-ar="الهاتف">Phone</label>
-                                <input type="tel" name="phone" required data-placeholder-en="Your phone number" data-placeholder-ar="رقم هاتفك" placeholder="Your phone number">
-                            </div>
-                            <div class="form-group">
-                                <label data-en="Company" data-ar="الشركة">Company</label>
-                                <input type="text" name="company" data-placeholder-en="Your company (optional)" data-placeholder-ar="شركتك (اختياري)" placeholder="Your company (optional)">
+                            <div class="method-info">
+                                <h3 data-en="Email Us" data-ar="راسلنا عبر البريد الإلكتروني">Email Us</h3>
+                                <p class="email-protected">smart [at] sstructure.com</p>
+                                <p class="email-protected">rami [at] moonhire.com</p>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label data-en="Project Type" data-ar="نوع المشروع">Project Type</label>
-                            <select name="project_type" required>
-                                <option value="" data-en="Select project type" data-ar="اختر نوع المشروع">Select project type</option>
-                                <option value="commercial" data-en="Commercial" data-ar="تجاري">Commercial</option>
-                                <option value="residential" data-en="Residential" data-ar="سكني">Residential</option>
-                                <option value="industrial" data-en="Industrial" data-ar="صناعي">Industrial</option>
-                                <option value="public" data-en="Public Sector" data-ar="قطاع عام">Public Sector</option>
-                                <option value="sports" data-en="Sports Facility" data-ar="منشأة رياضية">Sports Facility</option>
-                                <option value="other" data-en="Other" data-ar="أخرى">Other</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label data-en="Project Location" data-ar="موقع المشروع">Project Location</label>
-                            <input type="text" name="location" data-placeholder-en="City, Country" data-placeholder-ar="المدينة، الدولة" placeholder="City, Country">
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label data-en="Project Budget" data-ar="ميزانية المشروع">Project Budget</label>
-                                <select name="budget">
-                                    <option value="" data-en="Select budget range" data-ar="اختر نطاق الميزانية">Select budget range</option>
-                                    <option value="under50k" data-en="Under $50,000" data-ar="أقل من 50,000 دولار">Under $50,000</option>
-                                    <option value="50k-100k" data-en="$50,000 - $100,000" data-ar="50,000 - 100,000 دولار">$50,000 - $100,000</option>
-                                    <option value="100k-500k" data-en="$100,000 - $500,000" data-ar="100,000 - 500,000 دولار">$100,000 - $500,000</option>
-                                    <option value="500k-1m" data-en="$500,000 - $1,000,000" data-ar="500,000 - 1,000,000 دولار">$500,000 - $1,000,000</option>
-                                    <option value="over1m" data-en="Over $1,000,000" data-ar="أكثر من 1,000,000 دولار">Over $1,000,000</option>
-                                </select>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
                             </div>
-                            <div class="form-group">
-                                <label data-en="Timeline" data-ar="الجدول الزمني">Timeline</label>
-                                <select name="timeline">
-                                    <option value="" data-en="Select timeline" data-ar="اختر الجدول الزمني">Select timeline</option>
-                                    <option value="urgent" data-en="Urgent (1-3 months)" data-ar="عاجل (1-3 أشهر)">Urgent (1-3 months)</option>
-                                    <option value="short" data-en="Short term (3-6 months)" data-ar="قصير الأجل (3-6 أشهر)">Short term (3-6 months)</option>
-                                    <option value="medium" data-en="Medium term (6-12 months)" data-ar="متوسط الأجل (6-12 شهراً)">Medium term (6-12 months)</option>
-                                    <option value="long" data-en="Long term (12+ months)" data-ar="طويل الأجل (أكثر من 12 شهراً)">Long term (12+ months)</option>
-                                </select>
+                            <div class="method-info">
+                                <h3 data-en="Call Us" data-ar="اتصل بنا">Call Us</h3>
+                                <p><a href="tel:+201001221800">+20 100 122 1800</a></p>
+                                <p class="hours" data-en="Sunday - Thursday: 9:00 AM - 6:00 PM EET" data-ar="الأحد - الخميس: 9:00 صباحاً - 6:00 مساءً">Sunday - Thursday: 9:00 AM - 6:00 PM EET</p>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label data-en="Project Description" data-ar="وصف المشروع">Project Description</label>
-                            <textarea name="message" rows="6" required data-placeholder-en="Tell us about your project..." data-placeholder-ar="أخبرنا عن مشروعك..." placeholder="Tell us about your project..."></textarea>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3 data-en="Visit Us" data-ar="قم بزيارتنا">Visit Us</h3>
+                                <p data-en="Sheck Zayed District, 6 of October, Giza, Egypt" data-ar="منطقة الشيخ زايد، السادس من أكتوبر، الجيزة، مصر">
+                                    Sheck Zayed District<br>
+                                    6 of October, Giza, Egypt
+                                </p>
+                            </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-block" data-en="Send Message" data-ar="إرسال الرسالة">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3 data-en="Connect With Us" data-ar="تواصل معنا">Connect With Us</h3>
+                                <div class="social-links-contact">
+                                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <div class="form-message" id="formMessage"></div>
-                    </form>
+                    <div class="contact-note">
+                        <i class="fas fa-info-circle"></i>
+                        <p data-en="Please note: Email addresses are displayed with [at] to prevent spam. Replace [at] with @ when sending your email." data-ar="ملاحظة: يتم عرض عناوين البريد الإلكتروني بـ [at] لمنع البريد العشوائي. استبدل [at] بـ @ عند إرسال بريدك الإلكتروني.">
+                            Please note: Email addresses are displayed with [at] to prevent spam. Replace [at] with @ when sending your email.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
