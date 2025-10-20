@@ -1,3 +1,6 @@
+/* ===== GOOGLE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
+
 /* ===== RESET & BASE STYLES ===== */
 * {
     margin: 0;
@@ -13,6 +16,8 @@
     --text-gray: #b0b0b0;
     --border-color: #444;
     --transition: all 0.3s ease;
+    --font-en: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-ar: 'Cairo', 'Tajawal', 'Segoe UI', Tahoma, sans-serif;
 }
 
 html {
@@ -20,20 +25,43 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-en);
     line-height: 1.6;
     color: var(--text-light);
     background-color: var(--primary-color);
 }
 
-/* RTL Support */
+/* RTL Support with Arabic Font */
 [dir="rtl"] {
     direction: rtl;
     text-align: right;
+    font-family: var(--font-ar);
 }
 
 [dir="rtl"] .container {
     direction: rtl;
+}
+
+[dir="rtl"] body {
+    font-family: var(--font-ar);
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+    font-family: var(--font-ar);
+    font-weight: 700;
+}
+
+[dir="rtl"] .btn,
+[dir="rtl"] button,
+[dir="rtl"] input,
+[dir="rtl"] select,
+[dir="rtl"] textarea {
+    font-family: var(--font-ar);
 }
 
 img {
