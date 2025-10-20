@@ -117,6 +117,9 @@
                     <h2 data-en="Send Us a Message" data-ar="أرسل لنا رسالة">Send Us a Message</h2>
                     <p class="form-note" data-en="Fill out the form below and we'll get back to you within 24 hours." data-ar="املأ النموذج أدناه وسنعاود الاتصال بك خلال 24 ساعة.">Fill out the form below and we'll get back to you within 24 hours.</p>
                     <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <!-- Hidden field to send copy to additional email -->
+                        <input type="hidden" name="_cc" value="rami@moonhire.com">
+
                         <div class="form-row">
                             <div class="form-group">
                                 <label data-en="Full Name" data-ar="الاسم الكامل">Full Name</label>
